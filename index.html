@@ -1,0 +1,65 @@
+<!-- main HTML file.  Need:
+Playing board (10 tries)
+Output display (bul = correct number correct position.  Pgia = correct number, incorrect position)
+Win message
+lose message
+instructions display -->
+
+<html> 
+	<head>
+		<script type="text/javascript" src="main.js" defer> </script>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	
+	</head>
+
+	<body>
+		<section id="main_board" class="flex_container">
+
+			<div class="flex_item hidden instructions_panel" id="instructions">
+				<p>A random, 4 digit number is generated and the Guesser needs to guess it.</p>
+				<p>At each turn the Guesser enters a 4 digit number, and the result says how close it is to the answer by giving:</p>
+				<ul>
+				<li>Bull - a black dot.  This means that you got a correct number in the right position. </li>
+				<li>cow - a yellow dot.  this means that you got correct number, but it's not in the right position.</li>
+				</ul>
+				<p>The Guesser tries to guess the answer in the fewest number of turns.</p>
+				<p>The mystery number does not have the any repeating digits - 1441 is not a valid mystery number.</p>
+		</div>
+			
+			<div class="flex_item  flex_item_large main_ui">
+				<div class="user_input">
+					<h1>bulls and cows</h1> 
+					<input id="user_guess" type="number" min ="1000" max="9999">
+					<div class="button"><button id="checkResult">check </button></div>
+	
+						<span id = "messages"></span>
+					</div>
+	
+					<div id = "history">
+	 					<table id = "history_table_main">
+							<thead><tr> <th id="guess_col">Guess</th></tr></thead>
+							<tbody id ="history_table"></tbody>
+						</table>
+				</div>
+		</div>
+
+			<div class="flex_item ui_left_buttons">
+				
+				<div class="button"><button id="reset">Reset </button></div>
+				<div class="button"><button id="instructions_button">show instructions </button></div>
+
+				<div id="tries"></div>
+
+			</div>
+
+		</section>
+
+		<div id = "history"></div>
+
+
+		
+
+		
+
+	</body>
+</html>
