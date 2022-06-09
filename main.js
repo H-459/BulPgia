@@ -2,6 +2,8 @@
 
 //create random 4 digit array with no repeating numbers.  
 
+//commentes
+
 const MAX_RETRIES = 10;
 const NUM_LENGTH = 4
 
