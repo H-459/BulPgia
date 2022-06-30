@@ -1,0 +1,26 @@
+{
+"scanSettings": {
+"configMode": "LOCAL",
+"configExternalURL": "",
+"projectToken": "",
+"baseBranches": ["dev","release"],
+"enableLicenseViolations": "true"
+},
+"checkRunSettings": {
+"vulnerableCheckRunConclusionLevel": "failure",
+"displayMode": "diff",
+"licenseCheckRunConclusionLevel": "failure",
+"showWsInfo": "true"
+},
+"issueSettings": {
+"minSeverityLevel": "NONE",
+"issueType": "DEPENDENCY"
+},
+"remediateSettings": {
+"enableRenovate": "false",
+"workflowRules": {
+"enabled": "true",
+"minVulnerabilitySeverity": "HIGH"
+}
+}
+}
